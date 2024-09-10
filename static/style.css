@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px; /* Adjust the width as needed */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between content and footer */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h2 {
+    color: #333;
+}
+
+.features {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.features h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.features li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Footer Inside the Calculator Interface */
+.footer-inside {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Highlight Style for Name */
+.highlight {
+    font-weight: bold;
+    color: #333; /* Dark text color for better contrast */
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Removed background-color */
+}

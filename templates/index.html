@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Line Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Command Line Calculator</h1>
+        <form method="POST">
+            <input type="text" name="expression" placeholder="Enter expression" required>
+            <button type="submit">Calculate</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <h2>Result: {{ result }}</h2>
+        </div>
+        {% endif %}
+        
+        <div class="features">
+            <h3>Available Features:</h3>
+            <ul>
+                <li><b>Basic Operations</b>: +, -, *, /, %, ** (e.g., 2 + 3)</li>
+                <li><b>Square Root</b>: Use <code>sqrt()</code> (e.g., sqrt(16))</li>
+                <li><b>Trigonometry</b>: sin, cos, tan (e.g., sin(pi/2))</li>
+                <li><b>Logarithms</b>: log() for natural logarithm (e.g., log(e))</li>
+                <li><b>Exponentials</b>: exp() for exponential (e.g., exp(2))</li>
+                <li><b>Factorial</b>: Use <code>!</code> for factorial (e.g., 5!)</li>
+                <li><b>Constants</b>: <code>pi</code> (3.14159) and <code>e</code> (2.71828)</li>
+                <li><b>Algebraic Expressions</b>: Use variables like <code>x</code>, <code>y</code>, <code>z</code> (e.g., x + 2, x^2 - 5x + 6)</li>
+            </ul>
+        </div>
+
+        <!-- Footer Tag Within the Interface -->
+        <div class="footer-inside">
+            <p><span class="highlight"> By Shreyas Gowda S</span></p>
+        </div>
+    </div>
+</body>
+</html>
